@@ -13,9 +13,14 @@ def fibo(n):
 
 def fibo_rec(n):
 	# Escriba aquí el código para calcular el n-esimo valor de la serie de fibonacci de forma recursiva (NO use ciclos).
-	print("Que posición desea conocer de 1 a 10")
-	pos=input()
-	
+	print("Que posición desea conocer de 0 a 10")
+	n=input()
+	if(n<2):
+		print(n)
+	else
+		tot=(fibo_rec(n)-1) + (fibo_rec(n)-2)
+		
+	print('El número de la posición {} es {}'.format(n,tot))
 	pass
 	
 
